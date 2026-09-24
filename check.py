@@ -1,11 +1,12 @@
-email="202605271752@ui2.cswpf2001.top"#@param {type:"string"}
-password="304126"#@param {type:"string"}
+
 ##本地get
 import httpx
 import asyncio
 import json
 
 async def run():
+    email="202605271752@ui2.cswpf2001.top"#@param {type:"string"}
+    password="304126"#@param {type:"string"}
     async with httpx.AsyncClient(verify=False) as client:
         url="https://api.1min.ai/auth/login"
         headers = {
