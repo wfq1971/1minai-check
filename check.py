@@ -3,8 +3,8 @@ import asyncio
 import json
 
 async def run():
-    email="202605271752@ui2.cswpf2001.top"#@param {type:"string"}
-    password="304126"#@param {type:"string"}
+    email="202605271753@ui2.cswpf2001.top"#@param {type:"string"}
+    password="523930"#@param {type:"string"}
     async with httpx.AsyncClient(verify=False) as client:
         url="https://api.1min.ai/auth/login"
         headers = {
@@ -19,7 +19,7 @@ async def run():
         }
         response = await client.post(url, headers=headers,json=jsons)
         raw_text_1=json.load(response)
-        print(raw_text_1)
+        #print(raw_text_1)
         #print(raw_text_1)
         team_id=raw_text_1.get("user").get("teams")[0].get("teamId")
         token=raw_text_1.get("user").get("token")
