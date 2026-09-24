@@ -1,5 +1,3 @@
-
-##本地get
 import httpx
 import asyncio
 import json
