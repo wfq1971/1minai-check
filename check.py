@@ -31,4 +31,5 @@ async def run():
         print(team_id)
         print(f"Bearer {token}")
 
-await run()
+async def main():
+    await run()
