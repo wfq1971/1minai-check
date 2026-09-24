@@ -30,5 +30,5 @@ async def run():
         print(team_id)
         print(f"Bearer {token}")
 
-async def main():
-    await run()
+if __name__ == "__main__":
+    asyncio.run(main()) 
